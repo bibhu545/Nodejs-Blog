@@ -19,4 +19,4 @@ app.get('/', (req, res) => {
 })
 app.use('/articles', articleRoutes)
 
-app.listen(5000);
+app.listen(process.env.PORT || 3000);
